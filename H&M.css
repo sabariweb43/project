@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #111;
+}
+
+/* NAVBAR */
+.navbar{
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:10px 0px;
+      border-bottom:1px solid #eee;
+      background:#fff;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:30px;
+      margin-left: 30px;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color:#111;
+      font-size:15px;
+      font-weight:600;
+      transition:.3s;
+    }
+
+ .icons{
+        display:flex;
+      gap: 20px;
+      font-size:20px;
+      cursor:pointer;
+    }
+
+    .icons i{
+      transition: 0.3s;
+    }
+
+    .icons i:hover{
+      color: #777;
+      transform: scale(1.1);
+    }
+
+.logo {
+  font-family: 'Brush Script MT', cursive;
+  font-weight: bold;
+  color: red;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-left {
+  position: relative;
+}
+
+.price {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.pricee{
+   position: absolute;
+  bottom: 10px;
+  right: 20px;
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+/* CATEGORY */
+.category {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.cat-item {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 40px;
+}
+
+.products h2 {
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  text-align: center;
+  transition: 0.3s;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+/* FEATURE */
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+}
+
+.feature img {
+  width: 100%;
+}
+
+
+
+

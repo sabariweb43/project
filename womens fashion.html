@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <style>
+     .feature-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:12px;
+}
+
+.feature-card video{
+    width:50%;
+    height:350px;
+    object-fit:cover;
+    display:block;
+    transition:.4s;
+}
+
+.feature-card:hover video{
+    transform:scale(1.08);
+}
+
+.overlay{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:50%;
+    padding:20px;
+    color:#fff;
+    background:linear-gradient(to top, rgba(0,0,0,.75), transparent);
+}
+
+.overlay button{
+    border:none;
+    background:#fff;
+    color:#000;
+    padding:8px 20px;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+    .feature-card video{
+        height:250px;
+    }
+}
+    </style>
+  </head>
+ <body>
+
+ <div class="container my-4">
+  
+    <div class="row g-4">
+
+        <!-- Video 1 -->
+        <div class="col-lg- col-6">
+            <div class="feature-card">
+                <video autoplay muted loop playsinline>
+                    <source src="feature0.mp4" type="video/mp4">
+                </video>
+
+                <div class="overlay">
+                    <p>Running</p>
+                    <h4>Power Collection</h4>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="feature-card">
+                <video autoplay muted loop playsinline>
+                    <source src="feature.mp4" type="video/mp4">
+                </video>
+
+                <div class="overlay">
+                    <p>Best Sellers</p>
+                    <h4>New Collection</h4>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="feature-card">
+                <video autoplay muted loop playsinline>
+                    <source src="feature1.mp4" type="video/mp4">
+                </video>
+
+                <div class="overlay">
+                    <p>Trending</p>
+                    <h4>Latest Styles</h4>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="feature-card">
+                <video autoplay muted loop playsinline>
+                    <source src="feature3.mp4" type="video/mp4">
+                </video>
+
+                <div class="overlay">
+                    <p>Exclusive</p>
+                    <h4>Premium Collection</h4>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+ </body>
+</html>
